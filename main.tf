@@ -13,7 +13,7 @@ region = "${var.aws_region}"
 # aws amazon linux 
 resource "aws_instance" "web" {
 count ="2"
-ami = "ami-xxx"
+ami = "ami-07a877f081af74359"
 instance_type = "t3.micro"
 	tags = {
 	name="webserver1"
