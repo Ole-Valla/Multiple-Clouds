@@ -21,3 +21,9 @@ instance_type = "t3.micro"
 	location = "Glasgow"
 	}
 }
+
+output "instance_ips" {
+  value = "${aws_instance.web.*.public_ip}"}
+
+output "address" {
+  value = "${aws_instance.web.*.public_dns}"}
