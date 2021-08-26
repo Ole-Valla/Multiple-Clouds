@@ -15,9 +15,9 @@ resource "aws_instance" "web" {
 count ="2"
 ami = "ami-xxx"
 instance_type = "t3.micro"
-tags{
-name="webserver1"
-identity = "45343"
-location = "Glasgow"
-}
+	tags = {
+	name="webserver1"
+	identity = "45343"
+	location = "Glasgow"
+	}
 }
